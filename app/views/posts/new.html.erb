@@ -1,0 +1,27 @@
+<h1>New Post</h1>
+<br>
+<div>
+<%= form_for @post do |p| %>
+<div class="row">
+<div class= "col-md-2">
+<%= p.label :category %>
+<br>
+<br>
+<%= p.label :title %>
+<br>
+<br>
+<%= p.label :description %>
+</div>
+<div class= "col-md-2">
+<%= p.select :category, Post::categories%>
+<br>
+<br>
+<%= p.text_field :title%>
+<br>
+<br>
+<%= p.text_area :body%>
+</div>
+</div>
+<%= p.submit %>
+<% end %>
+</div>
