@@ -1,16 +1,24 @@
-<h1><%= @post.title %></h1>
+<h2><%= @post.title %></h2>
 <div>
 <h3>Posted by: <%= link_to @post.user.name, user_path(@post.user) %> </h3>
   <h4>Category: <%= @post.category %> Location: <%= @post.location %></h4>
 
   <div class="well well-sm"><%= @post.body %></div>
 </div>
-
+<div>
 <% if @post.user.id == current_user.id %>
 <%= link_to('Edit Post', edit_post_path) %>
 <%= link_to 'Delete Post', @post, method: :delete, data: {confirm: 'Are you sure?'}%>
 <% end %>
+</div>
 
-
-  </li>
-</ul>
+<div>
+  <h3>Comments: </h3>
+  <ul>
+      <% @post.comments.each do |m|%>
+      <li> <%= link_to '@comments.user.', user_path(@comment.user) %> <br>
+        <%= m.body %>
+        <%= m.created_at.strftime("%A, %b %d") %></li>
+      <% end %>
+  </ul>
+</div>
