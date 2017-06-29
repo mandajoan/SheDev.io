@@ -9,7 +9,9 @@
 
   <div class="well well-sm">
     <%= @post.body %></div>
-    <%= image_tag @post.picture_upload.url(:thumb) %>
+    <% if @post.picture_upload_file_name != nil %>
+    <%= image_tag @post.picture_upload.url(:medium) %>
+    <% end %>
 
 <div>
 <br>
