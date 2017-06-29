@@ -1,2 +1,10 @@
-<h1>Comments#edit</h1>
-<p>Find me in app/views/comments/edit.html.erb</p>
+<h2>Edit Comment</h2>
+
+<br>
+<div>
+  <%= form_for [@post.comments.find(params[:id])] do |c| %>
+  <%= c.label :body %>
+  <%= c.text_area :body %>
+  <%= c.submit %>
+  <% end %>
+</div>

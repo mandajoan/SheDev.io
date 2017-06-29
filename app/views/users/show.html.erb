@@ -4,7 +4,23 @@
 <h3>Bio</h3>
 <%= @user.bio %>
 </div>
-
+<br>
 <div>
+<h3> Posts by <%= @user.name %> </h3>
+  <ul>
+  <% @user.posts.each do |c| %>
+  <li><%= c.title %>   <%= link_to 'View Post', post_path(c) %>
+  </li>
+  <% end %>
+</ul>
 
+</div>
+
+
+<br>
+<div>
+  <% if @user.id == current_user.id %>
+  <%= link_to 'Edit Profile', edit_user_path(@user) %>
+
+  <% end %>
 </div>

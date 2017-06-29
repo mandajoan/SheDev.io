@@ -1,24 +1,61 @@
 <h2><%= @post.title %></h2>
-<div>
-<h3>Posted by: <%= link_to @post.user.name, user_path(@post.user) %> </h3>
-  <h4>Category: <%= @post.category %> Location: <%= @post.location %></h4>
+<h4>Posted by: <%= link_to @post.user.name, user_path(@post.user) %> </h4>
+<hr>
+<div class="row">
+  <div class="col-md-5">
+  <h4>Category: <%= @post.category %>
+    <br>
+    Location: <%= @post.location %></h4>
 
   <div class="well well-sm"><%= @post.body %></div>
-</div>
+
 <div>
+
 <% if @post.user.id == current_user.id %>
 <%= link_to('Edit Post', edit_post_path) %>
 <%= link_to 'Delete Post', @post, method: :delete, data: {confirm: 'Are you sure?'}%>
 <% end %>
 </div>
 
-<div>
-  <h3>Comments: </h3>
+</div>
+
+<div class="col-md-4">
+  <h3>Comments </h3>
   <ul>
       <% @post.comments.each do |m|%>
-      <li> <%= link_to '@comments.user.', user_path(@comment.user) %> <br>
-        <%= m.body %>
-        <%= m.created_at.strftime("%A, %b %d") %></li>
+      <li> <%= link_to m.user.name, user_path(m.user_id)%> <br>
+        <%= m.body %><br>
+        Comment Posted At: <%= m.created_at.strftime("%A, %b %d") %>
+        <br>
+
+        <% if m.user_id == current_user.id %>
+        <%= link_to 'Edit Comment', edit_comment_path(@post, m) %>
+        <% end %>
+        <% if m.user_id == current_user.id || @post.user.id == current_user.id  %>
+        <%= button_to 'Delete Comment', delete_comment_path(m),
+         :method => :delete,
+         data: {confirm: 'Are you sure?'}
+         %>
+         <% end %>
+
+      </li>
       <% end %>
   </ul>
+
+</div>
+<div class="col-md-3">
+
+<div id="newCommentDiv">
+  <h3> New Comment </h3>
+  <br>
+  <div>
+    <%= form_for [@post, @comment] do |c| %>
+    <%= c.text_area :body, placeholder: "Write comment here..." %>
+    <br>
+    <%= c.submit %>
+    <% end %>
+  </div>
+</div>
+</div>
+
 </div>

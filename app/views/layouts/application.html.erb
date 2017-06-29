@@ -7,11 +7,31 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-  
+
+
   </head>
 
   <body>
+    <header>
+      <%= image_tag "footerSD.png", :id => "headerLogo"%>
+    </header>
+
+    <% if notice %>
+        	    <%= notice %>
+  	<% end %>
+
+  	<% if alert %>
+        	    <%= alert %>
+  	<% end %>
+
+    <% if logged_in %>
     <%= render 'layouts/navbar' %>
+    <% end %>
     <%= yield %>
+
   </body>
+
+  <footer>
+  <%= image_tag "newfooter.png", :id => "footerLogo"%>
+  </footer>
 </html>

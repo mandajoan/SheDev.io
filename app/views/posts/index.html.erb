@@ -4,8 +4,8 @@
     <h2>Jobs</h2>
     <ul>
         <% @posts.where("category = ?", ['job']).each do |p| %>
-        <li> <%= p.created_at.strftime("%A, %b %d")%> <br>
-          <%= p.title %> <%= link_to 'View Post', post_path(p) %></li>
+        <li> Posted: <%= p.created_at.strftime("%A, %b %d")%> <br>
+          Job Title: <%= p.title %> <%= link_to 'View Post', post_path(p) %></li>
         <% end %>
     </ul>
   </div>
@@ -13,8 +13,9 @@
     <h2>Events</h2>
     <ul>
         <% @posts.where("category = ?", ['event']).each do |p| %>
-        <li>  <%= p.created_at.strftime("%A, %b %d")%> <br>
-        <%= p.title %> <%= link_to 'View Post', post_path(p) %>
+        <li>  Posted: <%= p.created_at.strftime("%A, %b %d")%> <br>
+        Event Title: <%= p.title %> <%= link_to 'View Post', post_path(p) %>
+          <br>
         </li>
         <% end %>
     </ul>
@@ -23,9 +24,13 @@
   <h2>Questions</h2>
     <ul>
         <% @posts.where("category = ?", ['question']).each do |p| %>
-        <li><%= p.created_at.strftime("%A, %b %d")%> <br>
-          <%= p.title %> <%= link_to 'View Post', post_path(p) %></li>
+        <li>Posted: <%= p.created_at.strftime("%A, %b %d")%> <br>
+          Help Topic: <%= p.title %> <%= link_to 'View Post', post_path(p) %></li>
         <% end %>
     </ul>
 </div>
 </div>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
