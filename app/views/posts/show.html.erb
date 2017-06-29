@@ -12,6 +12,8 @@
     <%= image_tag @post.picture_upload.url(:thumb) %>
 
 <div>
+<br>
+<br>
 
 <% if @post.user.id == current_user.id %>
 <%= link_to('Edit Post', edit_post_path) %>
