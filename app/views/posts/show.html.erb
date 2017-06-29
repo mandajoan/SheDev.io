@@ -7,7 +7,9 @@
     <br>
     Location: <%= @post.location %></h4>
 
-  <div class="well well-sm"><%= @post.body %></div>
+  <div class="well well-sm">
+    <%= @post.body %></div>
+    <%= image_tag @post.picture_upload.url(:thumb) %>
 
 <div>
 
