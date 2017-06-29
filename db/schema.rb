@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170627180545) do
+ActiveRecord::Schema.define(version: 20170629191310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,10 @@ ActiveRecord::Schema.define(version: 20170627180545) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "location"
+    t.string "picture_upload_file_name"
+    t.string "picture_upload_content_type"
+    t.integer "picture_upload_file_size"
+    t.datetime "picture_upload_updated_at"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
@@ -44,6 +48,11 @@ ActiveRecord::Schema.define(version: 20170627180545) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "pic_url_file_name"
+    t.string "pic_url_content_type"
+    t.integer "pic_url_file_size"
+    t.datetime "pic_url_updated_at"
+    t.string "job_title"
   end
 
   add_foreign_key "comments", "posts"

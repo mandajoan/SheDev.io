@@ -33,6 +33,7 @@ class PostsController < ApplicationController
     @post.title = params[:post][:title]
     @post.location = params[:post][:location]
     @post.category = params[:post][:category]
+    @post.picture_upload = params[:post][:picture_upload]
     @post.body = params[:post][:body]
     @post.save
 
@@ -46,6 +47,6 @@ class PostsController < ApplicationController
   end
   private
     def post_params
-      params.require(:post).permit(:title, :category, :location, :body, :password)
+      params.require(:post).permit(:title, :category, :location, :picture_upload, :body, :password)
     end
 end

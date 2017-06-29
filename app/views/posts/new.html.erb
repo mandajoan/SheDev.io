@@ -1,6 +1,8 @@
+<div id="newPostHead">
 <h2>New Post</h2>
+</div>
 <br>
-<div>
+<div id= "newPostDiv">
 <%= form_for @post do |p| %>
 <div class="row">
 <div class= "col-md-2">
@@ -13,9 +15,15 @@
 <%= p.label :title %>
 <br>
 <br>
-<%= p.label :description %>
+<%= p.label :body, "Post Description" %>
+<br>
+<br>
+<br>
+<%= p.label :picture_upload, "Upload Relevant Pictures" %>
 </div>
-<div class= "col-md-2">
+<div class= "col-md-1">
+</div>
+<div class= "col-md-6">
 <%= p.select :category, Post::categories%>
 <br>
 <br>
@@ -26,8 +34,19 @@
 <br>
 <br>
 <%= p.text_area :body%>
-</div>
-</div>
+<br>
+<br>
+<br>
+<%= p.file_field :picture_upload %>
+<br>
+<br>
+<br>
+
 <%= p.submit %>
+</div>
+
+</div>
+
 <% end %>
+
 </div>

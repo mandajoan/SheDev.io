@@ -13,7 +13,9 @@
 
   <body>
     <header>
-      <%= image_tag "footerSD.png", :id => "headerLogo"%>
+      <% if logged_in %>
+      <%= image_tag "pinkHeader.png", :id => "headerLogo"%>
+      <% end %>
     </header>
 
     <% if notice %>
@@ -32,6 +34,8 @@
   </body>
 
   <footer>
+    <% if logged_in %>
   <%= image_tag "newfooter.png", :id => "footerLogo"%>
+  <% end %>
   </footer>
 </html>

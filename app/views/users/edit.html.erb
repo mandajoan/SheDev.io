@@ -1,29 +1,45 @@
-<h1>Edit Profile</h1>
-<div>
-<%= form_for @user do |f| %>
-<div>
-  <%= f.text_field :name, placeholder: 'Name' %>
-</div>
-<br>
-<div>
-  <%= f.email_field :email, placeholder: 'Email' %>
-</div>
-<br>
-<div>
-  <%= f.password_field :password, placeholder: 'Password'%>
-</div>
-<br>
-<div>
-  <%= f.password_field :password_confirmation, placeholder: 'Confirm Password'%>
-</div>
-<br>
-<div>
-  <%= f.text_area :bio, placeholder: 'Bio' %>
-</div>
-<br>
-<div>
-  <%= f.text_field :location, placeholder: 'Location' %>
-</div>
+
+<div id= "editUser">
+
+
+    <br>
+    <br>
+    <br>
+    <h1>Edit Profile</h1>
+  <%= form_for @user do |f| %>
+  <br>
+    <%= f.text_field :name, placeholder: 'Name' %>
+  <br>
+  <br>
+
+    <%= f.email_field :email, placeholder: 'Email' %>
+  <br>
+  <br>
+
+    <%= f.password_field :password, placeholder: 'Password'%>
+  <br>
+  <br>
+
+    <%= f.password_field :password_confirmation, placeholder: 'Confirm Password'%>
+
+  <br>
+  <br>
+    <%= f.text_field :job_title, placeholder: "Professional Title:" %>
+  <br>
+  <br>
+    <%= f.text_area :bio, placeholder: 'Bio' %>
+  <br>
+  <br>
+
+    <%= f.text_field :location, placeholder: 'Location' %>
+
+  <br>
+  <br>
+    <%= f.label :pic_url, 'Upload Profile Picture:' %>
+    <br>
+    <%= f.file_field :pic_url %>
+  <br>
+  <br>
 <br>
 <%= f.submit 'Edit Profile' %>
 <% end  %>

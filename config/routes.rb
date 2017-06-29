@@ -18,6 +18,7 @@ Rails.application.routes.draw do
      patch '/users/:user_id/posts/:post_id/comments/:id' =>'comments#update'
      delete '/comments/:id' => 'comments#destroy', as: :delete_comment
 
+     get "/pages/about" => "pages#show", as: :page
 
 
 

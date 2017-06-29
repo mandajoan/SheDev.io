@@ -18,7 +18,7 @@ def create
 
   @user = User.new(user_params)
   if @user.save!
-    flash[:success]= "Welcome to SheDev! Please sign in."
+    flash[:notice]= "Welcome to SheDev! Please sign in."
     redirect_to login_path
   else
     redirect_to new_user_path
@@ -52,6 +52,6 @@ end
 
 private
   def user_params
-    params.require(:user).permit(:name, :email, :bio, :location, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :bio, :pic_url, :location, :job_title, :password, :password_confirmation)
   end
 end

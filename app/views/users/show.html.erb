@@ -1,12 +1,31 @@
-<h1><%= @user.name %></h1>
-<h4> <%= @user.location %></h4>
-<div>
-<h3>Bio</h3>
+<div class="container">
+<div class="row">
+  <div class="col-md-2">
+    <div id="userPic">
+    <%=image_tag @user.pic_url.url(:thumb)%>
+
+    </div>
+  </div>
+  <div class="col-md-3">
+    <h1><%= @user.name %></h1>
+    <h4> <%= @user.location %></h4>
+  </div>
+  <div class="col-md-3">
+    <br>
+    <h4> <small>Professional Title:</small> <br>
+    <%= @user.job_title %></h4>
+  </div>
+
+</div>
+
+<hr>
+<div id="userInfoDiv">
+<h4><%= @user.name %>'s Bio</h4>
 <%= @user.bio %>
 </div>
-<br>
+<hr>
 <div>
-<h3> Posts by <%= @user.name %> </h3>
+<h4> Posts by <%= @user.name %> </h4>
   <ul>
   <% @user.posts.each do |c| %>
   <li><%= c.title %>   <%= link_to 'View Post', post_path(c) %>
@@ -16,11 +35,12 @@
 
 </div>
 
+<br>
+
+<% if @user.id == current_user.id %>
+<%= link_to 'Edit Profile', edit_user_path(@user) %>
+
+<% end %>
 
 <br>
-<div>
-  <% if @user.id == current_user.id %>
-  <%= link_to 'Edit Profile', edit_user_path(@user) %>
-
-  <% end %>
 </div>

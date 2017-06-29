@@ -20,6 +20,11 @@
    padding-top: 60px;
    margin-left: 100px;
    margin-right: 100px;
+
+ }
+
+ .container {
+   width: 900px;
  }
 
  #rootLogo {
@@ -32,8 +37,7 @@
 }
 
 #rootBackground a {
-  color:  #ffcccc
-;
+  color: #666666;
 }
 
 #rootBackground h3 {
@@ -47,7 +51,7 @@
 // }
 
 a {
-  color:  #ffcccc;
+  color: #666666;
 }
 
 header {
@@ -58,11 +62,51 @@ header {
 
 footer {
   width: 851px;
-  margin-left: 114.5px;
+  height: 400px;
+  margin-left: 110px;
 }
 
 .cl-md-4 {
   text-align: center;
+}
+
+#newPostHead {
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 465px;
+}
+#newPostHead h2{
+  width: 200px;
+
+}
+#newPostDiv {
+  width: 600px;
+  margin-left: 390px;
+}
+
+#loginDiv{
+  width: 200px;
+  margin-left: 425px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#createUserDiv{
+  text-align: center;
+}
+
+#rootTag h2{
+opacity: .5;
+text-align: center;
+}
+
+#editUser {
+  width: 400px;
+  margin-left: 450px;
+}
+
+#loginPageDiv{
+  margin-left: 350px;
 }
 
 
