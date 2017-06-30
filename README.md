@@ -104,11 +104,12 @@ Users have the ability to comment on posts. A comment thread is available in eac
 
 ### Credit
 
-*Bootstrap CSS 
 
-*Bootswatch theme "Spacelab"
+* Bootstrap CSS 
 
-*PicsArt Photoshop Mobile App for creating logos
+* Bootswatch theme "Spacelab"
+
+* PicsArt Photoshop Mobile App for creating logos
 
 ![Logo 1](app/assets/images/mainLogo.png)
 
