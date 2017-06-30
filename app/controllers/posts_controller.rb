@@ -16,7 +16,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user = current_user
       if @post.save
-      redirect_to posts_path(@post)
+      redirect_to post_path(@post)
       else
       redirect_to new_post_path
       end
