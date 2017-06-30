@@ -5,7 +5,8 @@ SheDev is a social web based platform built to foster the community of women in 
 
 You can access SheDev  [here](https://shedev.herokuapp.com/).
 <hr>
-###Information about SheDev Devlopment:
+
+### Information about SheDev Devlopment:
 	
 	
 SheDev was created through Ruby on Rails, version 		'2.3.3'.
@@ -54,11 +55,11 @@ Users have the ability to comment on posts. A comment thread is available in eac
 (app/assets/images/postView.png)
 
 
-####Trello
+#### Trello
 
   [Page Link](https://trello.com/b/fsOnwiEQ/wdi-project-2-shedev)
   
-####Google Mindmap 
+#### Google Mindmap 
   
   ![Mindmapping](app/assets/images/mindmapping.png)
   
@@ -66,13 +67,13 @@ Users have the ability to comment on posts. A comment thread is available in eac
 
 
 <hr>
-###User Stories
+#### User Stories
 
 ![User Stories](app/assets/images/userstories.png)
 
 <hr>
 
-####Future Additions
+#### Future Additions
 
 * SheDev will have the ability for users to connect with one another through a "friending" relationship. 
 * SheDev users will be able to send and receive private messages. 
@@ -94,7 +95,7 @@ Users have the ability to comment on posts. A comment thread is available in eac
 * Users are not notified when someone comments on their posts and that needs to be changed. 
 
 <hr>
-####Credit
+#### Credit
 
 *Bootstrap CSS 
 
