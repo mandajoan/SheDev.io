@@ -5,7 +5,9 @@ SheDev is a social web based platform built to foster the community of women in 
 
 You can access SheDev  [here](https://shedev.herokuapp.com/).
 <hr>
-###Information about SheDev Devlopment:
+
+
+### Information about SheDev Devlopment:
 	
 	
 SheDev was created through Ruby on Rails, version 		'2.3.3'.
@@ -33,7 +35,8 @@ The are able to edit/delete posts they create, and are also able to upload a rel
 
 Users have the ability to comment on posts. A comment thread is available in each show view of a post, and only if you either, own the comment or own the post are you able to delete the comment. If you own the comment you are able to edit the content.  
 <hr>
-#### Wireframing, Trello, & Mindmapping
+
+### Wireframing, Trello, & Mindmapping
 
 
 
@@ -44,21 +47,21 @@ Users have the ability to comment on posts. A comment thread is available in eac
  			
 						Post Index Wireframe
 
-![Post Index Wireframe]
-(app/assets/images/postsindex.png)
+![Post Index Wireframe](app/assets/images/postsindex.png)
 
 					
 						Post Show Wireframe
 					
-![Post Show Wireframe]
-(app/assets/images/postView.png)
+![Post Show Wireframe](app/assets/images/postView.png)
 
 
-####Trello
+
+### Trello
 
   [Page Link](https://trello.com/b/fsOnwiEQ/wdi-project-2-shedev)
   
-####Google Mindmap 
+  
+### Google Mindmap 
   
   ![Mindmapping](app/assets/images/mindmapping.png)
   
@@ -66,13 +69,16 @@ Users have the ability to comment on posts. A comment thread is available in eac
 
 
 <hr>
-###User Stories
+
+
+### User Stories
 
 ![User Stories](app/assets/images/userstories.png)
 
 <hr>
 
-####Future Additions
+
+### Future Additions
 
 * SheDev will have the ability for users to connect with one another through a "friending" relationship. 
 * SheDev users will be able to send and receive private messages. 
@@ -80,7 +86,8 @@ Users have the ability to comment on posts. A comment thread is available in eac
 
 
 <hr>
-#### Bugs
+
+### Bugs
 
 
 * Using Bootstrap & Bootswatch, I had issues deploying specific CSS changes that would persoanlize the app as I intended it to be. 
@@ -94,13 +101,15 @@ Users have the ability to comment on posts. A comment thread is available in eac
 * Users are not notified when someone comments on their posts and that needs to be changed. 
 
 <hr>
-####Credit
 
-*Bootstrap CSS 
+### Credit
 
-*Bootswatch theme "Spacelab"
 
-*PicsArt Photoshop Mobile App for creating logos
+* Bootstrap CSS 
+
+* Bootswatch theme "Spacelab"
+
+* PicsArt Photoshop Mobile App for creating logos
 
 ![Logo 1](app/assets/images/mainLogo.png)
 
