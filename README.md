@@ -6,6 +6,7 @@ SheDev is a social web based platform built to foster the community of women in 
 You can access SheDev  [here](https://shedev.herokuapp.com/).
 <hr>
 
+
 ### Information about SheDev Devlopment:
 	
 	
@@ -34,6 +35,7 @@ The are able to edit/delete posts they create, and are also able to upload a rel
 
 Users have the ability to comment on posts. A comment thread is available in each show view of a post, and only if you either, own the comment or own the post are you able to delete the comment. If you own the comment you are able to edit the content.  
 <hr>
+
 ### Wireframing, Trello, & Mindmapping
 
 
@@ -55,9 +57,11 @@ Users have the ability to comment on posts. A comment thread is available in eac
 (app/assets/images/postView.png)
 
 
+
 ### Trello
 
   [Page Link](https://trello.com/b/fsOnwiEQ/wdi-project-2-shedev)
+  
   
 ### Google Mindmap 
   
@@ -73,6 +77,7 @@ Users have the ability to comment on posts. A comment thread is available in eac
 
 <hr>
 
+
 ### Future Additions
 
 * SheDev will have the ability for users to connect with one another through a "friending" relationship. 
@@ -81,6 +86,7 @@ Users have the ability to comment on posts. A comment thread is available in eac
 
 
 <hr>
+
 ### Bugs
 
 
@@ -95,6 +101,7 @@ Users have the ability to comment on posts. A comment thread is available in eac
 * Users are not notified when someone comments on their posts and that needs to be changed. 
 
 <hr>
+
 ### Credit
 
 *Bootstrap CSS 
