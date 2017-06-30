@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
   def self.categories
-    ['job', 'event', 'question']
+    ['Job', 'Event', 'Question']
   end
   belongs_to :user
   has_many :comments, dependent: :destroy
