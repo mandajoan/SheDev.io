@@ -47,14 +47,12 @@ Users have the ability to comment on posts. A comment thread is available in eac
  			
 						Post Index Wireframe
 
-![Post Index Wireframe]
-(app/assets/images/postsindex.png)
+![Post Index Wireframe](app/assets/images/postsindex.png)
 
 					
 						Post Show Wireframe
 					
-![Post Show Wireframe]
-(app/assets/images/postView.png)
+![Post Show Wireframe](app/assets/images/postView.png)
 
 
 
