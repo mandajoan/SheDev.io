@@ -71,6 +71,8 @@ Users have the ability to comment on posts. A comment thread is available in eac
 
 
 <hr>
+
+
 ### User Stories
 
 ![User Stories](app/assets/images/userstories.png)
